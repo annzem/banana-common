@@ -6,6 +6,13 @@ public class TgMessage {
 
     private String text;
 
+    public TgMessage() {
+    }
+
+    public TgMessage(String text, String chatId) {
+        this.chatId = chatId;
+        this.text = text;
+    }
 
     public String getChatId() {
         return chatId;
